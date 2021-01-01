@@ -10,9 +10,9 @@ int result;
 
 %token NUMBER PLUS
 %%
-program : expr PLUS expr { printf("program : %d %d\n", $1, $2, $3); result = $1 + $2; YYACCEPT; }
+program : expr PLUS expr { result = $1 + $3; YYACCEPT; }
         ;
-expr: NUMBER { printf("expr : %d\n", $1); $$ = $1; }
+expr: NUMBER { $$ = $1; }
 
 %%
 
