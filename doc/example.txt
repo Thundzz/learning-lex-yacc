@@ -1,0 +1,5 @@
+
+decalare x of type int
+increment x
+add 2 to x and assign to y
+display y
